@@ -252,3 +252,70 @@ html {
     transform: translateY(-5px);
     color: white;
 }
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.project-card{
+    width: 300px;
+    padding: 25px;
+    border: 2px solid #eecdec;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 8px #c8ae90;
+    transition: 0.3s;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #eecdec;
+}
+
+.project-card h3{
+    color: #eecdec;
+    font-size: 24px;
+}
+
+.project-card p{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.project-card a{
+    color: #eecdec;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-tags{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.tag{
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    font-size: 28px;
+}
+
+.blue{
+    background: #6f92af;
+}
+
+.green{
+    background: #9db98b;
+}
+
+.purple{
+    background: #a98ac9;
+}
