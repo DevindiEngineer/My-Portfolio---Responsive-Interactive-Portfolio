@@ -5,11 +5,29 @@ body {
 
 .hero {
     background-image: url("img/portfolio-wide-banner.png");
-    height: 350px;
+    height: 400px;
     background-size: cover;
     background-position: center;
 }
 
 .navbar{
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar .nav-link{
+    color: #eecdec !important;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #7c6448;
+}
+
+.navbar .navbar-brand{
+    color: #eecdec !important;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #7c6448;
+}
+
+.navbar-nav .nav-item{
+    margin-right: 75px;
 }
