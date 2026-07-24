@@ -1,3 +1,15 @@
-body{
-    background-color: black;
+body {
+    background-color: rgb(12, 2, 29) !important;
+    color: rgb(246, 244, 241) !important;
+}
+
+.hero {
+    background-image: url("img/portfolio-wide-banner.png");
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.7);
 }
