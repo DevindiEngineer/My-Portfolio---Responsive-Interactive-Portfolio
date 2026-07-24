@@ -166,19 +166,67 @@ html {
         top: 100px;
     }
 }
-.skills-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
+.skills-block h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin: 38px 0 18px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.28);
+  display: inline-block;
+  color: inherit;
 }
 
-.skills-icons i{
-    font-size: 100px;
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 28px;             
+  border-radius: 14px;
+  border: 1px solid rgba(128, 128, 128, 0.28);
+  background: rgba(128, 128, 128, 0.10);
+  font-size: 20px;              
+  font-weight: 600;
+  line-height: 1;
+  color: inherit;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+.skill-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(128, 128, 128, 0.55);
+  background: rgba(128, 128, 128, 0.18);
+}
+
+.skill-item img {
+  width: 44px;                     
+  height: 44px;
+  object-fit: contain;
+}
+
+
+.gh-icon { filter: invert(1); }
+
+.contact-links{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.contact-links i{
+    font-size: 80px;
+    color: #eecdec;
     transition: 0.3s;
 }
 
-.skills-icons i:hover{
-    transform: scale(1.1);
+.contact-links i:hover{
+    transform: translateY(-5px);
+    color: white;
 }
+
+
