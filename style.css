@@ -166,3 +166,19 @@ html {
         top: 100px;
     }
 }
+.skills-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.skills-icons i{
+    font-size: 100px;
+    transition: 0.3s;
+}
+
+.skills-icons i:hover{
+    transform: scale(1.1);
+}
