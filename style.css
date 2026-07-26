@@ -319,3 +319,40 @@ html {
 .purple{
     background: #a98ac9;
 }
+
+/* ===== RESPONSIVE (bulletproof) — paste at END of style.css ===== */
+
+* { box-sizing: border-box; }
+html, body { max-width: 100%; overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
+
+/* stop long words/links pushing the page wider than the screen */
+h1, h2, h3, p, span, a { overflow-wrap: break-word; word-break: break-word; }
+
+/* FLUID text — shrinks/grows with the screen, no zoom needed.
+   (the !important beats the inline font-size:75px in your HTML) */
+.glow             { font-size: clamp(28px, 7vw, 75px) !important; }
+section h2, td h2 { font-size: clamp(20px, 5vw, 40px) !important; }
+.glow-box p, td p { font-size: clamp(15px, 3.5vw, 20px) !important; }
+.navbar .nav-link { font-size: clamp(16px, 2.5vw, 32px) !important; }
+.tag              { font-size: clamp(16px, 4vw, 28px) !important; }
+
+/* PROJECT CARDS: 1 on phone, more (bigger) on wider screens */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.project-card { width: auto; }
+
+/* Stack the 2-column tables into ONE column on tablets & phones */
+@media (max-width: 900px) {
+    table, tbody, tr, td { display: block !important; width: 100% !important; }
+    td { padding: 12px !important; text-align: center !important; }
+    .glow-box { margin: 14px !important; padding: 16px !important; }
+    .profile-pic { width: 200px !important; height: 200px !important; }
+    .edu-pic { width: 100px !important; height: 100px !important; }
+    .contact-links { gap: 30px !important; }
+    .contact-links i { font-size: 44px !important; }
+    .navbar-nav { gap: 14px !important; }
+}
