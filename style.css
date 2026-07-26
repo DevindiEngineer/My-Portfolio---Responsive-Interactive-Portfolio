@@ -354,3 +354,9 @@ section h2, td h2 { font-size: clamp(20px, 5vw, 40px) !important; }
     .contact-links i { font-size: 44px !important; }
     .navbar-nav { gap: 14px !important; }
 }
+
+.profile-pic,
+.edu-pic {
+    max-width: none;  
+    flex-shrink: 0;
+}
